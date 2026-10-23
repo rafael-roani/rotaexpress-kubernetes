@@ -1,0 +1,40 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: carga
+  namespace: ops-lab
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 240
+  template:
+    metadata:
+      labels:
+        app: gerador-carga
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: k6
+          image: grafana/k6:1.0.0
+          command: ["k6", "run", "/scripts/carga.js"]
+          env:
+            - name: TAXA
+              value: "6"
+            - name: PARADAS
+              value: "9"
+            - name: DURACAO
+              value: "60"
+          resources:
+            requests:
+              cpu: 250m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
+          volumeMounts:
+            - name: script
+              mountPath: /scripts
+              readOnly: true
+      volumes:
+        - name: script
+          configMap:
+            name: carga-script
