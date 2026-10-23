@@ -1,0 +1,32 @@
+﻿teste: 1pod-b  replicas: 1
+endpoints: rotas-wnqbr   IPv4   8000   10.244.0.6   13m
+job: carga   Failed   0/1   86s   86s
+
+== contadores antes ==
+[pod/rotas-68659948f8-55vgc/rotas] aceito calculo_ms=535.8 total_aceitos=584 total_recusados=970
+
+== contadores depois ==
+[pod/rotas-68659948f8-55vgc/rotas] aceito calculo_ms=501.8 total_aceitos=706 total_recusados=1269
+
+== kubectl top pods ==
+--- amostra 1 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   148m         13Mi            
+--- amostra 2 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   148m         13Mi            
+--- amostra 3 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+carga-mc5vm              18m          20Mi            
+rotas-68659948f8-55vgc   275m         13Mi            
+--- amostra 4 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+carga-mc5vm              18m          20Mi            
+rotas-68659948f8-55vgc   275m         13Mi            
+--- amostra 5 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+carga-mc5vm              18m          20Mi            
+rotas-68659948f8-55vgc   275m         13Mi            
+--- amostra 6 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   275m         13Mi            

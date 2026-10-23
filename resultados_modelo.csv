@@ -1,0 +1,11 @@
+﻿rotulo;rodada;replicas;taxa;rotas_ok;sucessos_por_s;falhas_pct;p95_latencia_ok_ms;dropped_iterations_medicao;status_job;cpu_observada_por_pod;distribuicao_aceitos_por_pod;observacoes
+piloto;calibracao;1;6;100;1,67;72,22;587,88;0;Failed;~260m;120;taxa mantida em 6 (muita falha mas com sucessos) - status conferido pelo log (thresholds crossed)
+3pods-a;A;3;6;202;3,37;44,04;627,99;0;Failed;205m a 250m;79 / 83 / 67;
+1pod-a;A;1;6;103;1,72;71,46;557,04;0;Failed;~256m;120;
+2pods-a;A;2;6;155;2,58;57,06;619,67;0;Failed;180m a 320m;95 / 88;
+2pods-b;B;2;6;168;2,80;53,46;591,99;0;Failed;170m a 320m;99 / 95;
+3pods-b;B;3;6;200;3,33;44,44;605,69;0;Failed;190m a 235m;74 / 79 / 82;
+1pod-b;B;1;6;104;1,73;71,11;561,58;0;Failed;~275m;122;
+1pod-c;C;1;6;102;1,70;71,74;580,87;0;Failed;340m a 375m;120;
+2pods-c;C;2;6;165;2,75;54,16;616,99;0;Failed;200m a 230m;96 / 100;
+3pods-c;C;3;6;203;3,38;43,76;569,95;0;Failed;180m a 215m;77 / 80 / 80;

@@ -1,0 +1,41 @@
+﻿Obs: minikube iniciado com --cpus=3, mas o no anuncia capacidade de 12 CPUs (driver docker no WSL2). Com 6 replicas nada ficou Pending, entao repeti com 25 replicas (12,5 CPUs de request).
+
+== kubectl get pods (replicas=25) ==
+NAME                     READY   STATUS    RESTARTS   AGE
+rotas-68659948f8-2pwsg   1/1     Running   0          20s
+rotas-68659948f8-2zvpg   1/1     Running   0          20s
+rotas-68659948f8-4rxhs   1/1     Running   0          20s
+rotas-68659948f8-55vgc   1/1     Running   0          22m
+rotas-68659948f8-5mczm   1/1     Running   0          20s
+rotas-68659948f8-6zzmv   1/1     Running   0          20s
+rotas-68659948f8-7l6xc   1/1     Running   0          20s
+rotas-68659948f8-8qfwp   1/1     Running   0          20s
+rotas-68659948f8-9bhp6   1/1     Running   0          20s
+rotas-68659948f8-c8rvr   1/1     Running   0          20s
+rotas-68659948f8-ctx9j   1/1     Running   0          20s
+rotas-68659948f8-cxrq2   1/1     Running   0          20s
+rotas-68659948f8-dhcvq   1/1     Running   0          20s
+rotas-68659948f8-fw52s   1/1     Running   0          20s
+rotas-68659948f8-kvbsk   1/1     Running   0          20s
+rotas-68659948f8-l2zjk   1/1     Running   0          20s
+rotas-68659948f8-mp5fv   1/1     Running   0          20s
+rotas-68659948f8-p2dwz   1/1     Running   0          20s
+rotas-68659948f8-qmxjn   0/1     Pending   0          20s
+rotas-68659948f8-rzlwj   1/1     Running   0          20s
+rotas-68659948f8-s2xft   0/1     Pending   0          20s
+rotas-68659948f8-scsv9   1/1     Running   0          20s
+rotas-68659948f8-vjtzq   1/1     Running   0          20s
+rotas-68659948f8-wk2w6   1/1     Running   0          20s
+rotas-68659948f8-z2jdl   0/1     Pending   0          20s
+
+== describe pod rotas-68659948f8-qmxjn (Events) ==
+  Type     Reason            Age               From               Message
+  ----     ------            ----              ----               -------
+  Warning  FailedScheduling  1s (x4 over 20s)  default-scheduler  0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+
+== describe node ops-lab ==
+> Allocated resources:
+    (Total limits may be over 100 percent, i.e., overcommitted.)
+    Resource           Requests      Limits
+    --------           --------      ------
+    cpu                11850m (98%)  11 (91%)

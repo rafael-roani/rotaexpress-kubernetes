@@ -1,0 +1,44 @@
+﻿teste: 3pods-c  replicas: 3
+endpoints: rotas-wnqbr   IPv4   8000   10.244.0.6,10.244.0.22,10.244.0.24   18m
+job: carga   Failed   0/1   86s   86s
+
+== contadores antes ==
+[pod/rotas-68659948f8-55vgc/rotas] aceito calculo_ms=542.6 total_aceitos=922 total_recusados=1691
+[pod/rotas-68659948f8-cwwfk/rotas] aceito calculo_ms=491.1 total_aceitos=100 total_recusados=103
+[pod/rotas-68659948f8-txqsj/rotas] RotaExpress em http://localhost:8000
+
+== contadores depois ==
+[pod/rotas-68659948f8-cwwfk/rotas] aceito calculo_ms=602.6 total_aceitos=180 total_recusados=163
+[pod/rotas-68659948f8-txqsj/rotas] aceito calculo_ms=569.9 total_aceitos=80 total_recusados=71
+[pod/rotas-68659948f8-55vgc/rotas] aceito calculo_ms=536.2 total_aceitos=999 total_recusados=1745
+
+== kubectl top pods ==
+--- amostra 1 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   321m         13Mi            
+rotas-68659948f8-cwwfk   329m         13Mi            
+--- amostra 2 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   321m         13Mi            
+rotas-68659948f8-cwwfk   329m         13Mi            
+--- amostra 3 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   321m         13Mi            
+rotas-68659948f8-cwwfk   329m         13Mi            
+--- amostra 4 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+carga-gd7dp              18m          19Mi            
+rotas-68659948f8-55vgc   182m         13Mi            
+rotas-68659948f8-cwwfk   199m         13Mi            
+rotas-68659948f8-txqsj   216m         13Mi            
+--- amostra 5 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+carga-gd7dp              18m          19Mi            
+rotas-68659948f8-55vgc   182m         13Mi            
+rotas-68659948f8-cwwfk   199m         13Mi            
+rotas-68659948f8-txqsj   216m         13Mi            
+--- amostra 6 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   182m         13Mi            
+rotas-68659948f8-cwwfk   199m         13Mi            
+rotas-68659948f8-txqsj   216m         13Mi            

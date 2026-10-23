@@ -1,0 +1,381 @@
+﻿
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: /scripts/carga.js
+        output: -
+
+     scenarios: (100.00%) 2 scenarios, 40 max VUs, 1m30s max duration (incl. graceful stop):
+              * aquecimento: 6.00 iterations/s for 10s (maxVUs: 40, exec: aquecer, gracefulStop: 10s)
+              * medicao: 6.00 iterations/s for 1m0s (maxVUs: 40, exec: medir, startTime: 20s, gracefulStop: 10s)
+
+
+running (0m00.9s), 01/40 VUs, 5 complete and 0 interrupted iterations
+aquecimento   [   9% ] 01/40 VUs  00.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    19.1s     
+
+running (0m01.9s), 01/40 VUs, 11 complete and 0 interrupted iterations
+aquecimento   [  19% ] 01/40 VUs  01.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    18.1s     
+
+running (0m02.9s), 01/40 VUs, 17 complete and 0 interrupted iterations
+aquecimento   [  29% ] 01/40 VUs  02.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    17.1s     
+
+running (0m03.9s), 01/40 VUs, 23 complete and 0 interrupted iterations
+aquecimento   [  39% ] 01/40 VUs  03.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    16.1s     
+
+running (0m04.9s), 01/40 VUs, 29 complete and 0 interrupted iterations
+aquecimento   [  49% ] 01/40 VUs  04.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    15.1s     
+
+running (0m05.9s), 01/40 VUs, 35 complete and 0 interrupted iterations
+aquecimento   [  59% ] 01/40 VUs  05.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    14.1s     
+
+running (0m06.9s), 01/40 VUs, 41 complete and 0 interrupted iterations
+aquecimento   [  69% ] 01/40 VUs  06.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    13.1s     
+
+running (0m07.9s), 00/40 VUs, 48 complete and 0 interrupted iterations
+aquecimento   [  79% ] 00/40 VUs  07.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    12.1s     
+
+running (0m08.9s), 01/40 VUs, 53 complete and 0 interrupted iterations
+aquecimento   [  89% ] 01/40 VUs  08.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    11.1s     
+
+running (0m09.9s), 01/40 VUs, 59 complete and 0 interrupted iterations
+aquecimento   [  99% ] 01/40 VUs  09.9s/10s  6.00 iters/s
+medicao     • [   0% ] waiting    10.1s     
+
+running (0m10.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    09.1s
+
+running (0m11.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    08.1s
+
+running (0m12.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    07.1s
+
+running (0m13.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    06.1s
+
+running (0m14.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    05.1s
+
+running (0m15.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    04.1s
+
+running (0m16.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    03.1s
+
+running (0m17.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    02.1s
+
+running (0m18.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    01.1s
+
+running (0m19.9s), 00/40 VUs, 60 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s  6.00 iters/s
+medicao     • [   0% ] waiting    00.1s
+
+running (0m20.9s), 01/40 VUs, 65 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [   2% ] 01/40 VUs  0m00.9s/1m0s  6.00 iters/s
+
+running (0m21.9s), 01/40 VUs, 71 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [   3% ] 01/40 VUs  0m01.9s/1m0s  6.00 iters/s
+
+running (0m22.9s), 00/40 VUs, 78 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [   5% ] 00/40 VUs  0m02.9s/1m0s  6.00 iters/s
+
+running (0m23.9s), 01/40 VUs, 83 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [   7% ] 01/40 VUs  0m03.9s/1m0s  6.00 iters/s
+
+running (0m24.9s), 01/40 VUs, 89 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [   8% ] 01/40 VUs  0m04.9s/1m0s  6.00 iters/s
+
+running (0m25.9s), 01/40 VUs, 95 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  10% ] 01/40 VUs  0m05.9s/1m0s  6.00 iters/s
+
+running (0m26.9s), 01/40 VUs, 101 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  12% ] 01/40 VUs  0m06.9s/1m0s  6.00 iters/s
+
+running (0m27.9s), 01/40 VUs, 107 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  13% ] 01/40 VUs  0m07.9s/1m0s  6.00 iters/s
+
+running (0m28.9s), 01/40 VUs, 113 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  15% ] 01/40 VUs  0m08.9s/1m0s  6.00 iters/s
+
+running (0m29.9s), 01/40 VUs, 119 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  17% ] 01/40 VUs  0m09.9s/1m0s  6.00 iters/s
+
+running (0m30.9s), 01/40 VUs, 125 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  18% ] 01/40 VUs  0m10.9s/1m0s  6.00 iters/s
+
+running (0m31.9s), 00/40 VUs, 132 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  20% ] 00/40 VUs  0m11.9s/1m0s  6.00 iters/s
+
+running (0m32.9s), 01/40 VUs, 137 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  22% ] 01/40 VUs  0m12.9s/1m0s  6.00 iters/s
+
+running (0m33.9s), 01/40 VUs, 143 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  23% ] 01/40 VUs  0m13.9s/1m0s  6.00 iters/s
+
+running (0m34.9s), 01/40 VUs, 149 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  25% ] 01/40 VUs  0m14.9s/1m0s  6.00 iters/s
+
+running (0m35.9s), 01/40 VUs, 155 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  27% ] 01/40 VUs  0m15.9s/1m0s  6.00 iters/s
+
+running (0m36.9s), 01/40 VUs, 161 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  28% ] 01/40 VUs  0m16.9s/1m0s  6.00 iters/s
+
+running (0m37.9s), 01/40 VUs, 167 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  30% ] 01/40 VUs  0m17.9s/1m0s  6.00 iters/s
+
+running (0m38.9s), 01/40 VUs, 173 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  32% ] 01/40 VUs  0m18.9s/1m0s  6.00 iters/s
+
+running (0m39.9s), 01/40 VUs, 179 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  33% ] 01/40 VUs  0m19.9s/1m0s  6.00 iters/s
+
+running (0m40.9s), 01/40 VUs, 185 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  35% ] 01/40 VUs  0m20.9s/1m0s  6.00 iters/s
+
+running (0m41.9s), 01/40 VUs, 191 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  37% ] 01/40 VUs  0m21.9s/1m0s  6.00 iters/s
+
+running (0m42.9s), 01/40 VUs, 197 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  38% ] 01/40 VUs  0m22.9s/1m0s  6.00 iters/s
+
+running (0m43.9s), 01/40 VUs, 203 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  40% ] 01/40 VUs  0m23.9s/1m0s  6.00 iters/s
+
+running (0m44.9s), 01/40 VUs, 209 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  42% ] 01/40 VUs  0m24.9s/1m0s  6.00 iters/s
+
+running (0m45.9s), 01/40 VUs, 215 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  43% ] 01/40 VUs  0m25.9s/1m0s  6.00 iters/s
+
+running (0m46.9s), 01/40 VUs, 221 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  45% ] 01/40 VUs  0m26.9s/1m0s  6.00 iters/s
+
+running (0m47.9s), 01/40 VUs, 227 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  47% ] 01/40 VUs  0m27.9s/1m0s  6.00 iters/s
+
+running (0m48.9s), 01/40 VUs, 233 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  48% ] 01/40 VUs  0m28.9s/1m0s  6.00 iters/s
+
+running (0m49.9s), 01/40 VUs, 239 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  50% ] 01/40 VUs  0m29.9s/1m0s  6.00 iters/s
+
+running (0m50.9s), 01/40 VUs, 245 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  52% ] 01/40 VUs  0m30.9s/1m0s  6.00 iters/s
+
+running (0m51.9s), 01/40 VUs, 251 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  53% ] 01/40 VUs  0m31.9s/1m0s  6.00 iters/s
+
+running (0m52.9s), 01/40 VUs, 257 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  55% ] 01/40 VUs  0m32.9s/1m0s  6.00 iters/s
+
+running (0m53.9s), 00/40 VUs, 264 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  57% ] 00/40 VUs  0m33.9s/1m0s  6.00 iters/s
+
+running (0m54.9s), 01/40 VUs, 269 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  58% ] 01/40 VUs  0m34.9s/1m0s  6.00 iters/s
+
+running (0m55.9s), 01/40 VUs, 275 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  60% ] 01/40 VUs  0m35.9s/1m0s  6.00 iters/s
+
+running (0m56.9s), 01/40 VUs, 281 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  62% ] 01/40 VUs  0m36.9s/1m0s  6.00 iters/s
+
+running (0m57.9s), 01/40 VUs, 287 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  63% ] 01/40 VUs  0m37.9s/1m0s  6.00 iters/s
+
+running (0m58.9s), 01/40 VUs, 293 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  65% ] 01/40 VUs  0m38.9s/1m0s  6.00 iters/s
+
+running (0m59.9s), 01/40 VUs, 299 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  67% ] 01/40 VUs  0m39.9s/1m0s  6.00 iters/s
+
+running (1m00.9s), 01/40 VUs, 305 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  68% ] 01/40 VUs  0m40.9s/1m0s  6.00 iters/s
+
+running (1m01.9s), 00/40 VUs, 312 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  70% ] 00/40 VUs  0m41.9s/1m0s  6.00 iters/s
+
+running (1m02.9s), 01/40 VUs, 317 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  72% ] 01/40 VUs  0m42.9s/1m0s  6.00 iters/s
+
+running (1m03.9s), 00/40 VUs, 324 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  73% ] 00/40 VUs  0m43.9s/1m0s  6.00 iters/s
+
+running (1m04.9s), 01/40 VUs, 329 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  75% ] 01/40 VUs  0m44.9s/1m0s  6.00 iters/s
+
+running (1m05.9s), 01/40 VUs, 335 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  77% ] 01/40 VUs  0m45.9s/1m0s  6.00 iters/s
+
+running (1m06.9s), 01/40 VUs, 341 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  78% ] 01/40 VUs  0m46.9s/1m0s  6.00 iters/s
+
+running (1m07.9s), 01/40 VUs, 347 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  80% ] 01/40 VUs  0m47.9s/1m0s  6.00 iters/s
+
+running (1m08.9s), 01/40 VUs, 353 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  82% ] 01/40 VUs  0m48.9s/1m0s  6.00 iters/s
+
+running (1m09.9s), 00/40 VUs, 360 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  83% ] 00/40 VUs  0m49.9s/1m0s  6.00 iters/s
+
+running (1m10.9s), 01/40 VUs, 365 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  85% ] 01/40 VUs  0m50.9s/1m0s  6.00 iters/s
+
+running (1m11.9s), 01/40 VUs, 371 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  87% ] 01/40 VUs  0m51.9s/1m0s  6.00 iters/s
+
+running (1m12.9s), 01/40 VUs, 377 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  88% ] 01/40 VUs  0m52.9s/1m0s  6.00 iters/s
+
+running (1m13.9s), 01/40 VUs, 383 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  90% ] 01/40 VUs  0m53.9s/1m0s  6.00 iters/s
+
+running (1m14.9s), 01/40 VUs, 389 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  92% ] 01/40 VUs  0m54.9s/1m0s  6.00 iters/s
+
+running (1m15.9s), 01/40 VUs, 395 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  93% ] 01/40 VUs  0m55.9s/1m0s  6.00 iters/s
+
+running (1m16.9s), 01/40 VUs, 401 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  95% ] 01/40 VUs  0m56.9s/1m0s  6.00 iters/s
+
+running (1m17.9s), 00/40 VUs, 408 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  97% ] 00/40 VUs  0m57.9s/1m0s  6.00 iters/s
+
+running (1m18.9s), 01/40 VUs, 413 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [  98% ] 01/40 VUs  0m58.9s/1m0s  6.00 iters/s
+
+running (1m19.9s), 01/40 VUs, 419 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s           6.00 iters/s
+medicao       [ 100% ] 01/40 VUs  0m59.9s/1m0s  6.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    dropped_iterations{scenario:medicao}
+    ✓ 'count==0' count=0
+
+    falhas
+    ✗ 'rate<0.01' rate=71.74%
+
+    latencia_ok
+    ✓ 'p(95)<800' p(95)=580.87ms
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    falhas..................................................................: 71.74% 259 out of 361
+    latencia_ok.............................................................: avg=505.13ms med=506.28ms p(95)=580.87ms max=618.46ms
+    rotas_ok................................................................: 102    1.27003/s
+
+    HTTP
+    http_req_duration.......................................................: avg=174.28ms med=55ms     p(95)=523.14ms max=618.46ms
+      { expected_response:true }............................................: avg=504.67ms med=503.5ms  p(95)=587.95ms max=618.46ms
+    http_req_failed.........................................................: 71.49% 301 out of 421
+    http_reqs...............................................................: 421    5.241987/s
+
+    EXECUTION
+    dropped_iterations......................................................: 0      0/s
+      { scenario:medicao }..................................................: 0      0/s
+    iteration_duration......................................................: avg=174.93ms med=55.74ms  p(95)=523.9ms  max=619.01ms
+    iterations..............................................................: 421    5.241987/s
+    vus.....................................................................: 1      min=0          max=1 
+    vus_max.................................................................: 40     min=40         max=40
+
+    NETWORK
+    data_received...........................................................: 147 kB 1.8 kB/s
+    data_sent...............................................................: 43 kB  540 B/s
+
+
+
+
+running (1m20.3s), 00/40 VUs, 421 complete and 0 interrupted iterations
+aquecimento ✓ [ 100% ] 00/40 VUs  10s   6.00 iters/s
+medicao     ✓ [ 100% ] 00/40 VUs  1m0s  6.00 iters/s
+time="2026-10-22T23:27:03Z" level=error msg="thresholds on metrics 'falhas' have been crossed"

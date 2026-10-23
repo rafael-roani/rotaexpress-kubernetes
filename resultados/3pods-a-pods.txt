@@ -1,0 +1,41 @@
+﻿teste: 3pods-a  replicas: 3
+endpoints: rotas-wnqbr   IPv4   8000   10.244.0.6,10.244.0.12,10.244.0.11   4m34s
+job: carga   Failed   0/1   86s   86s
+
+== contadores antes ==
+[pod/rotas-68659948f8-55vgc/rotas] aceito calculo_ms=496.6 total_aceitos=117 total_recusados=303
+[pod/rotas-68659948f8-n8s2g/rotas] RotaExpress em http://localhost:8000
+[pod/rotas-68659948f8-pxwvf/rotas] RotaExpress em http://localhost:8000
+
+== contadores depois ==
+[pod/rotas-68659948f8-55vgc/rotas] aceito calculo_ms=462.8 total_aceitos=196 total_recusados=366
+[pod/rotas-68659948f8-n8s2g/rotas] aceito calculo_ms=464.9 total_aceitos=83 total_recusados=67
+[pod/rotas-68659948f8-pxwvf/rotas] aceito calculo_ms=478.1 total_aceitos=67 total_recusados=62
+
+== kubectl top pods ==
+--- amostra 1 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   268m         13Mi            
+--- amostra 2 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   268m         13Mi            
+--- amostra 3 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   268m         13Mi            
+--- amostra 4 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+carga-zszp8              21m          20Mi            
+rotas-68659948f8-55vgc   223m         13Mi            
+rotas-68659948f8-n8s2g   250m         13Mi            
+rotas-68659948f8-pxwvf   205m         13Mi            
+--- amostra 5 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+carga-zszp8              21m          20Mi            
+rotas-68659948f8-55vgc   223m         13Mi            
+rotas-68659948f8-n8s2g   250m         13Mi            
+rotas-68659948f8-pxwvf   205m         13Mi            
+--- amostra 6 ---
+NAME                     CPU(cores)   MEMORY(bytes)   
+rotas-68659948f8-55vgc   223m         13Mi            
+rotas-68659948f8-n8s2g   250m         13Mi            
+rotas-68659948f8-pxwvf   205m         13Mi            
